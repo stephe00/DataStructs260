@@ -3,9 +3,26 @@
 // CS 260 
 // Link Queue 
 
+public:
+	//  queue(int size = SIZE);    	// constructor
+	// ~queue();                  	// destructor
+
+	void dequeue();
+void enqueue(int x);
+int peek();
+int size();
+//  bool isEmpty();
+// bool isFull();
+};
+
 struct Node
 {
 	int data;
+	arr = new int[size];
+	capacity = size;
+	front = 0;
+	rear = -1;
+	count = 0;
 
 	Node * link;
 };
@@ -21,6 +38,17 @@ bool isempty()
 	{
 		return false;
 	}
+}
+
+int queue::peek()
+{
+	if (isEmpty())
+	{
+		cout << "UnderFlow\nProgram Terminated\n";
+		exit(EXIT_FAILURE);
+	}
+
+	return arr[front];
 }
 
 void enqueue(int value)
