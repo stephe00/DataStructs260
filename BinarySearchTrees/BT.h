@@ -50,7 +50,7 @@ void BinaryTree<T>::addData(T value)
     {
         while (loop == true)
         {
-            // Is the value I am trying to add bigger or smaller than the current value?
+            // Is the value I add Big or Small? 
             if(newNode->data < currentNode->data)
             {
                 if(currentNode->left != NULL)
