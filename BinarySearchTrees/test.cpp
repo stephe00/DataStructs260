@@ -38,7 +38,7 @@ int main(int argc, char** argv)
 
     cout << "Attempting to delete value not in tree" << endl << endl;
     myTree.deleteData(myTree.root, 67);
-    cout << "Yay, success!" << endl << endl;
+    cout << "DELETED. " << endl << endl;
 
     myTree.printTree(myTree.root);
     cout << "The tree traverses in order to print successfully!" << endl << endl;
@@ -67,9 +67,9 @@ int main(int argc, char** argv)
     myTree.deleteData(myTree.root, 27);
 
     myTree.printTree(myTree.root);
-    cout << "The tree is still in order, success!" << endl << endl;
+    cout << "The tree is still in order, smart code. !" << endl << endl;
 
-    cout << "There are three 7s in the tree and it works fine, success!" << endl << endl;
+    cout << "There are 3 7's and this works fine. Woohoo. " << endl << endl;
 
 
     return 0;
